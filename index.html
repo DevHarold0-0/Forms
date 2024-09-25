@@ -3,22 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="hero">
-
       <div class="container">
-        <img id="odin_img" src="./images/odin-lined.png" alt="The Odin Project logo">
+        <img
+          id="odin_img"
+          src="./images/odin-lined.png"
+          alt="The Odin Project logo"
+        />
         <h1 class="odin_text">ODIN</h1>
       </div>
-      
+
       <p class="hero_text">
-        Photo by <a href="https://unsplash.com/@haliewestphoto">Halie</a> Weston <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+        Photo by <a href="https://unsplash.com/@haliewestphoto">Halie</a> Weston
+        <a
+          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+          >Unsplash</a
+        >
       </p>
+    </div>
+
+    <div class="main_content">
+      <div class="header">
+        <h2 class="header_content">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />Sign
+          up <em>now</em> to get started.
+        </h2>
+
+        <h2 class="header_content_2">You <em>know</em> you want to.</h2>
+      </div>
+
+      <form>
+        <fieldset>
+          <legend>Let's do this!</legend>
+
+          <div>
+            <label for="first_name">
+              <div>FIRST NAME</div>
+            </label>
+            <input type="text" id="first_name" name="first_name" size="30" />
+          </div>
+
+          <div>
+            <label for="last_name">
+              <div>LAST NAME</div>
+            </label>
+            <input type="text" id="last_name" name="last_name" size="30" />
+          </div>
+
+
+          <div>
+            <label for="mail">
+              <div>*EMAIL</div>
+            </label>
+            <input type="email" id="mail" name="user_mail" size="30" required/>
+          </div>
+
+          <div>
+            <label for="last_name">
+              <div>PHONE NUMBER</div>
+            </label>
+            <input type="tel" id="tel" name="tel" size="30" />
+          </div>
+
+          <div>
+            <label for="pwd">
+              <div>*PASSWORD</div>
+            </label>
+            <input type="password" id="pwd" name="pwd" size="30" required/>
+          </div>
+
+          <div>
+            <label for="pwd_confirm">
+              <div>*CONFIRM PASSWORD</div>
+            </label>
+            <input type="password" id="pwd_confirm" name="pwd_confirm" size="30" required/>
+          </div>
+        </fieldset>
+      </form>
+
+      <div class="account">
+        <button>Create Account</button>
+        <div class="footer">Already have an account? <span>Log in</span></div>
+      </div>
     </div>
   </body>
 </html>
-
-

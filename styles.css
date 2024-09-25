@@ -51,17 +51,27 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
-
+form, fieldset, legend, label, input{ margin: 0; padding: 0;}
 
 
 
 body {
+  display: flex;
+  flex-direction: row;
   height: 100vh;
   padding: 0;
+  background-color: #F9FAFB;
 }
 
 a {
   color: white;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .odin_text {
@@ -72,7 +82,7 @@ a {
 
 
 .hero {
-  width: 650px;
+  width: 750px;
   height: inherit;
   background-image: url(./images/plants.jpg);
   background-repeat: no-repeat;
@@ -94,7 +104,7 @@ a {
 }
 
 .hero_text {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: .9rem;
   color: white;
   text-align: center;
@@ -102,3 +112,125 @@ a {
   top: 810px;
 }
 
+
+
+
+.main_content {
+  flex-grow: 1;
+}
+
+.header {
+  width: 840px;
+  margin-top: 160px;
+}
+
+.header_content {
+  font-size: 1.5rem;
+  line-height: 1.12;
+  padding: 0 60px;
+}
+
+.header_content_2 {
+  font-size: 1.5rem;
+  padding: 0 60px;
+  margin-top: 15px;
+}
+
+
+
+form {
+  display: inline-block;
+  width: 100%;
+  margin-top: 62px;
+  background-color: #FFFFFF;
+  padding: 0 70px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 75px;
+  width: 550px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+label > div {
+  font-family: "Roboto mono", sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+input {
+  border: 1px solid#E5E7EB;
+  border-radius: 3px;
+  height: 30px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #557AE1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input#pwd:invalid {
+  border: 1px solid #C13737;
+}
+
+input#pwd:valid {
+  border: 1px solid #557AE1;
+}
+
+input#pwd_confirm:invalid {
+  border: 1px solid #C13737;
+}
+
+input#pwd_confirm:valid {
+  border: 1px solid #557AE1;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 50px ;
+  margin-top: 40px;
+  margin-left: 70px;
+  background-color: #596D48;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+  color: white;
+  transform: translateY(-10px);
+}
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 425;
+  margin-left: 70px;
+  margin-top: 25px;
+}
+
+span {
+  color: #596D48;
+  font-weight: bold;
+}
